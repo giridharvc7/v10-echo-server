@@ -51,6 +51,52 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "3xEcho",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "05df05ff-6bfe-4038-9180-abf4e51c6fe6",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"hello\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "5ffe5eec-2c31-438e-b6dc-50c00975454c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:1337/echoechoecho?message=hellos",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"echoechoecho"
+					],
+					"query": [
+						{
+							"key": "message",
+							"value": "hellos"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
