@@ -5,5 +5,108 @@
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_uid": "812134-a33bf812-c00f-4e7e-9519-77e67b6be70f"
 	},
-	"item": []
+	"item": [
+		{
+			"name": "New Folder",
+			"item": [
+				{
+					"name": "New Request Copy",
+					"id": "5e67b641-cadf-4f36-8563-989963807212",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "postman-echo.com/get?{{param}}={{msg}}",
+							"host": [
+								"postman-echo",
+								"com"
+							],
+							"path": [
+								"get"
+							],
+							"query": [
+								{
+									"key": "{{param}}",
+									"value": "{{msg}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"id": "461e1cb6-62b9-44fd-a3f1-fd3867890666",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "postman-echo.com/get?{{param}}={{msg}}",
+							"host": [
+								"postman-echo",
+								"com"
+							],
+							"path": [
+								"get"
+							],
+							"query": [
+								{
+									"key": "{{param}}",
+									"value": "{{msg}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "82af4541-4c8e-4e92-a7c3-fb6a8c679048"
+		},
+		{
+			"name": "Parrot",
+			"id": "ad182a85-6ff4-46c2-b55f-25cc256ac99a",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "postman-echo.com/get?{{param}}={{msg}}",
+					"host": [
+						"postman-echo",
+						"com"
+					],
+					"path": [
+						"get"
+					],
+					"query": [
+						{
+							"key": "{{param}}",
+							"value": "{{msg}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"id": "b89ed409-2bfe-4387-a19f-720c4179669b",
+			"key": "msg",
+			"value": "Parrot"
+		},
+		{
+			"id": "565b50d4-57e6-4300-ab37-baf1be256e05",
+			"key": "param",
+			"value": "name"
+		}
+	]
 }
